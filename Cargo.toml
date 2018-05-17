@@ -1,0 +1,8 @@
+[package]
+name = "git-tweet"
+version = "0.0.1"
+authors = ["crtomirmajer",
+           "lovromazgon",
+           "urgas9"]
+
+[dependencies]
