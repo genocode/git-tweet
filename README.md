@@ -13,6 +13,7 @@ Disclaimer: we are *complete* Rust beginners, and want to learn it in this proje
 
 - each player can add only one commit at a time, successive commits must be from different players
 - commits can contain up to 250 characters
+  - the length of a commit is determined with `git diff --color=always|perl -wlne 'print $1 if /^\e\[32m\+\e\[m\e\[32m(.*)\e\[m$/' | wc -c`
 - code can only be added, existing code must stay as it is, *unless* the pushed code doesn't compile, then it can be changed so that it compiles
 - the exception is the "refactoring day", when each player can change existing code
 - the actual date of the refactoring day is scheduled by the players
